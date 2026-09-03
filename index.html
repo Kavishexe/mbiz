@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAK Marine — Vessel Agency Services | Katunayake, Sri Lanka</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+<meta name="description" content="KAK Marine Vessel Agency Services — husbandry, technical support, chandlering and marine solutions at the Port of Colombo and Katunayake anchorage, Sri Lanka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="siteHeader">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">
+      <img class="logo-mark" src="logo-mark.png" alt="KAK Marine logo" width="34" height="34">
+      <span class="logo-text">KAK MARINE<span>Vessel Agency Services</span></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a class="nav-link" href="#pillars">Services</a></li>
+        <li><a class="nav-link" href="#presence">Our Presence</a></li>
+        <li><a class="nav-link" href="#request">Request Service</a></li>
+        <li><a class="nav-link" href="#footer-contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="#portal" class="portal-link">Client Portal</a>
+      <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav">
+  <div class="mnav-top"><button class="mnav-close" id="mnavClose" aria-label="Close menu">&times;</button></div>
+  <ul>
+    <li><a href="#pillars">Services</a></li>
+    <li><a href="#presence">Our Presence</a></li>
+    <li><a href="#request">Request Service</a></li>
+    <li><a href="#footer-contact">Contact</a></li>
+  </ul>
+  <a href="#portal" class="portal-link">Client Portal</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-slide hs-1 active"></div>
+  <div class="hero-slide hs-2"></div>
+  <div class="hero-slide hs-3"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <svg class="compass-svg" viewBox="0 0 200 200" fill="none">
+    <circle cx="100" cy="100" r="96" stroke="#dcbf8b" stroke-width="1"/>
+    <circle cx="100" cy="100" r="70" stroke="#dcbf8b" stroke-width="1"/>
+    <path d="M100 8L108 92L100 100L92 92Z" fill="#dcbf8b"/>
+    <path d="M100 192L92 108L100 100L108 108Z" fill="#dcbf8b" opacity="0.6"/>
+    <path d="M8 100L92 92L100 100L92 108Z" fill="#dcbf8b" opacity="0.6"/>
+    <path d="M192 100L108 108L100 100L108 92Z" fill="#dcbf8b" opacity="0.6"/>
+  </svg>
+
+  <svg class="waves" viewBox="0 0 1600 220" preserveAspectRatio="none">
+    <path class="wave-path wave-1" d="M0 120 C 200 60, 400 60, 600 120 S 1000 180, 1200 120 S 1600 60, 1800 120 S 2200 180, 2400 120 S 2800 60, 3000 120 S 3200 180, 3200 120 V220 H0 Z" fill="#123049"/>
+    <path class="wave-path wave-2" d="M0 150 C 220 90, 420 90, 640 150 S 1040 210, 1260 150 S 1660 90, 1880 150 S 2280 210, 2500 150 S 2900 90, 3200 150 V220 H0 Z" fill="#0c2033"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="eyebrow">Katunayake · Colombo Anchorage · Sri Lanka</div>
+    <h1>Full-service vessel<br>agency, <em>from first<br>contact to sail-away.</em></h1>
+    <p class="lede">Husbandry, technical support, chandlering and marine solutions coordinated for owners, operators and charterers calling at Sri Lankan ports — around the clock, every day of the year.</p>
+    <div class="hero-ctas">
+      <a href="#request" class="btn btn-gold">Request a Quote →</a>
+      <a href="#pillars" class="btn btn-outline">View Our Services</a>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <button class="active" data-slide="0" aria-label="Slide 1"></button>
+    <button data-slide="1" aria-label="Slide 2"></button>
+    <button data-slide="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>Scroll</div>
+
+  <div class="ais-strip">
+    <div class="ais-track" id="aisTrack"></div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-bar" style="padding:0;">
+  <div class="stats-grid">
+    <div class="stat"><div class="num mono">1,200+</div><div class="lbl">Vessel Calls Handled</div></div>
+    <div class="stat"><div class="num mono">24/7</div><div class="lbl">Duty Officer Coverage</div></div>
+    <div class="stat"><div class="num mono">06</div><div class="lbl">Ports & Anchorages Covered</div></div>
+    <div class="stat"><div class="num mono">&lt;30min</div><div class="lbl">Emergency Response Time</div></div>
+  </div>
+</section>
+
+<!-- ===== PILLARS ===== -->
+<section class="pillars-section" id="pillars">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" style="color:var(--gold-dim);">Core Capabilities</div>
+      <h2>Four pillars of vessel agency support</h2>
+      <p>Every port call is coordinated end-to-end across operations, technical, supply and specialised requirements — one point of contact, no gaps in handover.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar">
+        <div class="pnum">PILLAR 01</div>
+        <svg class="icon" viewBox="0 0 42 42" fill="none"><rect x="7" y="10" width="28" height="24" rx="1" stroke="currentColor" stroke-width="1.6"/><line x1="7" y1="18" x2="35" y2="18" stroke="currentColor" stroke-width="1.4"/><line x1="14" y1="10" x2="14" y2="34" stroke="currentColor" stroke-width="1.4"/><line x1="21" y1="18" x2="21" y2="34" stroke="currentColor" stroke-width="1.4"/><line x1="28" y1="18" x2="28" y2="34" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3>Supply Chain &amp; Chandlering</h3>
+        <p style="font-size:13.5px;color:var(--steel);">Provisions, stores and bunkers delivered on schedule with full traceability.</p>
+        <ul>
+          <li>Fresh &amp; dry provisions supply</li>
+          <li>Bonded stores &amp; bunkering</li>
+          <li>Certified marine safety equipment</li>
+          <li>Marine hardware &amp; safety gear</li>
+          <li>Lubricant &amp; chemical supply</li>
+          <li>Electrical supply</li>
+        </ul>
+        <a class="pillar-link" href="#request">Request this service</a>
+      </div>
+
+      <div class="pillar">
+        <div class="pnum">PILLAR 02</div>
+        <svg class="icon" viewBox="0 0 42 42" fill="none"><path d="M8 34L16 26M16 26L26 16C28 14 28 11 26 9C24 7 21 7 19 9L9 19C7 21 7 24 9 26C11 28 14 28 16 26Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M24 8L34 18" stroke="currentColor" stroke-width="1.6"/><circle cx="30" cy="12" r="2" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3>Technical &amp; Repairs</h3>
+        <p style="font-size:13.5px;color:var(--steel);">Certified contractors mobilised fast for underwater, mechanical and class-driven work.</p>
+        <ul>
+          <li>Underwater inspection &amp; repair</li>
+          <li>Class &amp; flag survey coordination</li>
+          <li>Engine &amp; deck machinery repair</li>
+          <li>Spare parts logistics &amp; clearance</li>
+        </ul>
+        <a class="pillar-link" href="#request">Request this service</a>
+      </div>
+
+      <div class="pillar">
+        <div class="pnum">PILLAR 03</div>
+        <svg class="icon" viewBox="0 0 42 42" fill="none"><rect x="6" y="14" width="30" height="18" stroke="currentColor" stroke-width="1.6"/><path d="M6 14L21 6L36 14" stroke="currentColor" stroke-width="1.6"/><line x1="21" y1="6" x2="21" y2="32" stroke="currentColor" stroke-width="1.6"/><circle cx="21" cy="24" r="3" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3>Operational Logistics &amp; Husbandry</h3>
+        <p style="font-size:13.5px;color:var(--steel);">Berth planning, cargo liaison and crew welfare handled so masters can focus on the vessel.</p>
+        <ul>
+          <li>Port entry &amp; clearance coordination</li>
+          <li>Berth &amp; pilotage scheduling</li>
+          <li>Crew changes &amp; visa formalities</li>
+          <li>Cash to master &amp; documentation</li>
+        </ul>
+        <a class="pillar-link" href="#request">Request this service</a>
+      </div>
+
+      <div class="pillar">
+        <div class="pnum">PILLAR 04</div>
+        <svg class="icon" viewBox="0 0 42 42" fill="none"><path d="M6 30C6 30 10 22 21 22C32 22 36 30 36 30" stroke="currentColor" stroke-width="1.6"/><path d="M10 22L14 8H28L32 22" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="21" y1="8" x2="21" y2="4" stroke="currentColor" stroke-width="1.6"/><circle cx="21" cy="4" r="1.6" fill="currentColor"/></svg>
+        <h3>Special Marine Solutions</h3>
+        <p style="font-size:13.5px;color:var(--steel);">Complex, time-critical operations planned with a dedicated project lead.</p>
+        <ul>
+          <li>Crew transfers &amp; launch charter</li>
+          <li>Salvage &amp; emergency response</li>
+          <li>Offshore support coordination</li>
+          <li>Cargo survey &amp; P&amp;I liaison</li>
+        </ul>
+        <a class="pillar-link" href="#request">Request this service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRESENCE / MAP ===== -->
+<section class="presence" id="presence">
+  <div class="hero-grid"></div>
+  <div class="wrap presence-inner">
+    <div>
+      <div class="eyebrow">Coverage</div>
+      <h2>Our presence on the Sri Lankan coast</h2>
+      <p style="color:rgba(255,255,255,0.6); max-width:480px;">Headquartered at Katunayake, positioned for rapid mobilisation to Colombo anchorage and every principal port around the island.</p>
+
+      <div class="presence-list">
+        <div class="port-row">
+          <span class="pname"><span class="ais-dot"></span>Katunayake — HQ</span>
+          <span class="pcoord">07°10′N 079°53′E</span>
+        </div>
+        <div class="port-row">
+          <span class="pname"><span class="ais-dot"></span>Colombo Port &amp; Anchorage</span>
+          <span class="pcoord">06°57′N 079°50′E</span>
+        </div>
+        <div class="port-row">
+          <span class="pname"><span class="ais-dot"></span>Hambantota Port</span>
+          <span class="pcoord">06°07′N 081°07′E</span>
+        </div>
+        <div class="port-row">
+          <span class="pname"><span class="ais-dot"></span>Galle Harbour</span>
+          <span class="pcoord">06°02′N 080°13′E</span>
+        </div>
+        <div class="port-row">
+          <span class="pname"><span class="ais-dot"></span>Trincomalee Harbour</span>
+          <span class="pcoord">08°34′N 081°14′E</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-panel">
+      <img src="sri-lanka-map.png" alt="Sri Lanka Operational Map - KAK Marine Ports" style="width:100%; height:auto; display:block;">
+      <div class="map-caption"><span>SRI LANKA — OPERATIONAL PRESENCE</span><span>SERVING ALL MAJOR PORTS</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== REQUEST FOR SERVICES ===== -->
+<section class="request" id="request">
+  <div class="wrap">
+    <div class="request-inner">
+      <div class="request-side">
+        <div class="eyebrow">Request for Services</div>
+        <h2>Contact us on WhatsApp</h2>
+        <p>Submit provisioning, bunkering, crew transfer or technical requirements and our duty officer will respond with a quotation within one working shift. Prefer to message directly? Reach us on WhatsApp any time.</p>
+        <a href="https://wa.me/94706660611" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:6px; margin-bottom:10px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 9.27 20.92 6.79 19.05 4.92C17.18 3.05 14.68 2 12.04 2ZM12.04 3.67C14.24 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.29 9.71 20.28 11.91C20.28 16.45 16.58 20.15 12.03 20.15C10.56 20.15 9.12 19.76 7.85 19.03L7.55 18.85L4.43 19.68L5.27 16.64L5.08 16.32C4.28 15 3.85 13.47 3.85 11.91C3.86 7.37 7.5 3.67 12.04 3.67Z"/></svg>
+          WhatsApp Us
+        </a>
+        <div class="emergency-box">
+          <div class="lbl">24-Hour Emergency Line</div>
+          <div class="num"><a href="tel:+94706660611" style="color:inherit;">+94 70 666 0611</a></div>
+        </div>
+      </div>
+
+      <form class="request-form" onsubmit="event.preventDefault(); this.querySelector('.form-submitted').style.display='block'; this.querySelector('.btn-gold').style.display='none';">
+        <div class="form-row">
+          <div class="field">
+            <label for="vname">Vessel Name</label>
+            <input id="vname" type="text" placeholder="e.g. MV Ocean Voyager" required>
+          </div>
+          <div class="field">
+            <label for="imo">IMO Number</label>
+            <input id="imo" type="text" placeholder="e.g. 9876543">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="eta">Expected Arrival (ETA)</label>
+            <input id="eta" type="date">
+          </div>
+          <div class="field">
+            <label for="port">Port / Anchorage</label>
+            <select id="port">
+              <option>Colombo Port</option>
+              <option>Katunayake Anchorage</option>
+              <option>Galle Harbour</option>
+              <option>Hambantota Port</option>
+              <option>Trincomalee Harbour</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field" style="margin-bottom:12px;">
+          <label>Services Required</label>
+        </div>
+        <div class="service-toggles">
+          <label class="toggle"><input type="checkbox"><span>Provisions</span></label>
+          <label class="toggle"><input type="checkbox"><span>Bunkering</span></label>
+          <label class="toggle"><input type="checkbox"><span>Crew Transfer</span></label>
+          <label class="toggle"><input type="checkbox"><span>Technical Repair</span></label>
+          <label class="toggle"><input type="checkbox"><span>Husbandry</span></label>
+          <label class="toggle"><input type="checkbox"><span>Emergency Support</span></label>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="cname">Contact Name</label>
+            <input id="cname" type="text" placeholder="Full name" required>
+          </div>
+          <div class="field">
+            <label for="cemail">Contact Email</label>
+            <input id="cemail" type="email" placeholder="you@company.com" required>
+          </div>
+        </div>
+
+        <div class="field" style="margin-bottom:24px;">
+          <label for="notes">Additional Requirements</label>
+          <textarea id="notes" placeholder="Quantities, specifications, or special instructions..."></textarea>
+        </div>
+
+        <div class="form-foot">
+          <button type="submit" class="btn btn-gold">Submit Request →</button>
+          <span class="form-note">Response within one working shift · confidential</span>
+        </div>
+        <p class="form-submitted" style="display:none; margin-top:16px; font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:#3f8a5c;">✓ Request logged. A duty officer will contact you shortly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENT PORTAL ===== -->
+<section class="portal-section" id="portal">
+  <div class="wrap portal-inner">
+    <div>
+      <div class="eyebrow" style="color:var(--gold-dim);">Client Portal</div>
+      <h2 style="margin-bottom:26px;">Everything on your port call, in one place</h2>
+      <ul class="portal-benefits">
+        <li>
+          <svg class="bi" viewBox="0 0 24 24" fill="none"><path d="M4 12L10 18L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h4>Live status tracking</h4><p>Follow clearance, husbandry and supply progress against your schedule in real time.</p></div>
+        </li>
+        <li>
+          <svg class="bi" viewBox="0 0 24 24" fill="none"><path d="M4 12L10 18L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h4>Documentation vault</h4><p>Port call statements, invoices and certificates archived and downloadable anytime.</p></div>
+        </li>
+        <li>
+          <svg class="bi" viewBox="0 0 24 24" fill="none"><path d="M4 12L10 18L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h4>Direct duty officer line</h4><p>Message the officer assigned to your vessel without routing through a call centre.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="portal-card">
+      <div class="eyebrow">Vessel Owners &amp; Managers</div>
+      <h3>Client Portal</h3>
+      <div style="position:relative; z-index:2; border:1px solid rgba(184,147,95,0.35); background:rgba(184,147,95,0.06); padding:22px 20px; margin-top:4px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+          <span style="width:8px; height:8px; border-radius:50%; background:#dcbf8b; box-shadow:0 0 8px #dcbf8b; flex-shrink:0;"></span>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-light);">Under Maintenance</span>
+        </div>
+        <p style="font-size:13.5px; color:rgba(255,255,255,0.65); line-height:1.7;">The Client Portal is currently offline for scheduled upgrades. Existing clients can reach their duty officer directly via WhatsApp or the emergency line below.</p>
+      </div>
+      <a href="https://wa.me/94706660611" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%; justify-content:center; margin-top:18px;">Message Your Duty Officer →</a>
+      <div class="portal-meta">
+        <a href="#request">Request account access</a>
+        <a href="tel:+94706660611">Call +94 70 666 0611</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" style="color:var(--gold-dim);">Trusted By Operators</div>
+      <h2>What masters and managers say</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="quote-mark">"</div>
+        <p class="qtext">Provisions and bunkers were alongside within hours of our ETA revision. No follow-up calls needed — the coordination was already done.</p>
+        <div class="test-who"><b>Fleet Operations Manager</b>Bulk Carrier Operator, Singapore</div>
+      </div>
+      <div class="test-card">
+        <div class="quote-mark">"</div>
+        <p class="qtext">An underwater repair was arranged and completed before our next port window closed. That turnaround saved us a full day of hire.</p>
+        <div class="test-who"><b>Technical Superintendent</b>Container Line, Hamburg</div>
+      </div>
+      <div class="test-card">
+        <div class="quote-mark">"</div>
+        <p class="qtext">Crew changes at Colombo are routinely the most complex in our rotation. KAK Marine has made them the most predictable instead.</p>
+        <div class="test-who"><b>Crewing Manager</b>Tanker Fleet, Athens</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="certs">
+  <div class="wrap certs-inner">
+    <span class="certs-label">Certified &amp; Recognised</span>
+    <div class="cert-badges">
+      <span class="cert-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>ISO 9001:2015</span>
+      <span class="cert-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>FONASBA Affiliated</span>
+      <span class="cert-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>Sri Lanka Ports Authority Registered</span>
+      <span class="cert-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>ISPS Compliant</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer-contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <img class="logo-mark" src="logo-mark.png" alt="KAK Marine logo" width="34" height="34">
+          <span class="logo-text">KAK MARINE</span>
+        </a>
+        <p>Vessel agency services for owners, operators and charterers calling at Sri Lankan ports. Katunayake, Sri Lanka.</p>
+        <div class="footer-emergency">
+          <div class="lbl">24-Hour Emergency Line</div>
+          <div class="num"><a href="tel:+94706660611" style="color:inherit;">+94 70 666 0611</a></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#pillars">Operational Logistics</a></li>
+          <li><a href="#pillars">Technical &amp; Repairs</a></li>
+          <li><a href="#pillars">Supply &amp; Chandlering</a></li>
+          <li><a href="#pillars">Special Marine Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#presence">Our Presence</a></li>
+          <li><a href="#portal">Client Portal</a></li>
+          <li><a href="#request">Request a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>26, Vijaya Mawatha,<br>Katunayake, Sri Lanka</li>
+          <li><a href="mailto:sales@kak.company">sales@kak.company</a></li>
+          <li><a href="tel:+94706660611">+94 70 666 0611</a></li>
+          <li><a href="https://wa.me/94706660611" target="_blank" rel="noopener">WhatsApp: +94 70 666 0611</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KAK Marine Vessel Agency Services Ltd. All rights reserved.</span>
+      <span>Katunayake · Colombo · Galle · Hambantota · Trincomalee</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING ACTION BUTTONS ===== -->
+<div class="fab-stack">
+  <a href="mailto:sales@kak.company" class="fab fab-email" aria-label="Email us">
+    <span class="fab-label">sales@kak.company</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+  </a>
+  <a href="https://wa.me/94706660611" target="_blank" rel="noopener" class="fab fab-wa" aria-label="Chat on WhatsApp">
+    <span class="fab-wa-pulse"></span>
+    <span class="fab-label">WhatsApp: +94 70 666 0611</span>
+    <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 9.27 20.92 6.79 19.05 4.92C17.18 3.05 14.68 2 12.04 2ZM12.04 3.67C14.24 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.29 9.71 20.28 11.91C20.28 16.45 16.58 20.15 12.03 20.15C10.56 20.15 9.12 19.76 7.85 19.03L7.55 18.85L4.43 19.68L5.27 16.64L5.08 16.32C4.28 15 3.85 13.47 3.85 11.91C3.86 7.37 7.5 3.67 12.04 3.67Z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
